@@ -2,21 +2,18 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here Exercitiul 3
-        int[] Karray = {5, 6, 2, 13, 8, 14, 99};
-        int numar = -32000;
-        for (int i = 0; i < Karray.length; i++)
-            if (Karray[i] % 2 == 1) {
-                if (Karray[i] > numar) {
-                    numar = Karray[i];
-                } else {
-                }
+        // write your code here Exercitiul 4
+        int[] vector = {5, 3, 14, 17, 8, 5, 23};
+        int nrpar = 0;
+        int nrimpar = 0;
+        for (int i = 0; i < vector.length; i++) {
+            if (vector[i] % 2 == 0) {
+                nrpar++;
+            } else {
+                nrimpar++;
             }
-        if (numar == -32000) {
-            System.out.println("NO");
-        } else {
-            System.out.println("Cel mai mare numar impar este:  " + numar);
-        }
 
+        }
+        System.out.println("Exista " + nrpar + " numere pare si " + nrimpar + " numere impare");
     }
 }

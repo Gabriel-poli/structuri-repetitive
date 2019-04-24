@@ -2,14 +2,14 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here Exercitiul 8
-        int a = 5;
-        int b = 3;
-        int calcul = a;
-        for (int i = 1; i < b; i++)  {
-            calcul=calcul*a;
+        // write your code here Exercitiul 9
+        int n = 5;
+        for (int i = 1; i <= n; ++i) {
+            for (int j = 1; j <= i; ++j){
+                System.out.print(j);
+            }
+            System.out.println();
 
         }
-    System.out.println(calcul);
-        }
     }
+}
